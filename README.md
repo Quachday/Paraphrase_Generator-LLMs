@@ -8,6 +8,8 @@ The project goes through some stages (in GenAI lifecycle) including:
 3. Adapt and Align model:
 - Prompt engineering (zero-shot, one-shot, few-shot): The results were good enough for the task even though I tried several ways to modify the prompts.
 Note: You can select other LLMs to test and consider whether or not they suit for your task.
+![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/prompt0.PNG)
+
 - Fine-Tuning:
 We have some choices for this phase: full-training or peft (parameter-efficient fine-tuning - lora) - which consider to update low rank parameters of the original model.
 With the power of free-Colab environment, running 1 epochs gets ~15G gpu, leading to out of resources -> Bad inferences.
