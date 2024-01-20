@@ -25,11 +25,11 @@ As you can see, the model tends to answer the question.
 With one-shot, by giving an example, the results are better (the completion just changed the main verb of the sentences) - still not completely paraphrased but acceptable to keep going.
 - Fine-Tuning:
 We have some choices for this phase: full-training or peft (parameter-efficient fine-tuning - lora) - which consider to update low rank parameters of the original model.
-With the power of free-Colab environment, running 1 epochs gets ~15G gpu, leading to out of resources -> Bad inferences.
+With the power of free-Colab environment, running 1 epochs gets ~15G gpu, leading to out of resources -> Bad inferences. The completions of two models are the same, this is because the trainning stage is not enough to modify any parameters.
 
 ![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/blob/main/Images/full_train.PNG)
 
-After that, I tried with PEFT, which requires much, much less compute resourse (~1% compared to the full training) -> The performance improved a lot.
+After that, I tried with PEFT, which requires much, much less compute resourse (~1% compared to the full training) -> The performance improved, but it still struggles with questions as it just can paraphrase statement.
 
 ![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/blob/main/Images/peft.png)
 
@@ -40,4 +40,10 @@ Quantitative Evaluation: ROUGE and (BLEU) are utilized by using lib.
 
 Qualitative Evaluation: Human. 
 
+
+Further work:
+- This is just a mini-project to test the idea of Generative Ai with Large language models.
+- There are a lot of difficulties derived from compute resource and model selection.
+- After obtaining an acceptable model to perform, we need to do Align with human feedback phase including detoxifying, increasing helpfulness and honesty.
+  It can be done using reinforcement learning with human feedback.
 
