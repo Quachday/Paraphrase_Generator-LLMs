@@ -8,14 +8,14 @@ The project goes through some stages (in GenAI lifecycle) including:
 3. Adapt and Align model:
 - Prompt engineering (zero-shot, one-shot, few-shot): The results were good enough for the task after I tried several ways to modify the prompts.
 Note: You can select other LLMs to test and consider whether or not they suit for your task.
-![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/blob/main/prompt0.PNG)
+![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/tree/main/Images/prompt0.PNG)
 
 
 
 As you can see, the model tends to answer the question.
 
 
-![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/blob/main/prompt1.PNG)
+![image](https://github.com/Quachday/Paraphrase_Generator-LLMs/tree/main/Images/prompt0.PNG)
 
 
 With one-shot, by giving an example, the results are better (the completion just changed the main verb of the sentences) - still not completely paraphrased but acceptable to keep going.
